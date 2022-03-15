@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Online Sports Shop</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+
+<body>
+
+  <div class="container">
+    <header>
+     <center><h1 class="container1"> Sports Shop</h1></center>
+    </header>
+  </div>
+  <nav> 
+     <ul>
+        <li><a class="active" href="online sports shop.html">Home</a></li>
+        <li><a  href="signup_page.html">Login</a></li>
+
+        <li>
+           <a href="#">Sports
+           <i class="fas fa-caret-down"></i>
+           </a>
+           <ul>
+              <li><a href="Cricket.html">Cricket</a></li>
+              <li><a href="hockey.html">Hockey</a></li>
+              <li><a href="football.html">Football</a></li>
+              <li><a href="badminton.html">Badminton</a></li>
+              <li><a href="basketball.html">Basketball</a></li>
+           </ul>
+        </li>
+
+        <li><a href="about us.html">About us</a></li>
+     </ul>
+
+     <span class="searchbar">
+      <form class="searchform">
+        <input class="searchinput" type="text"  name="search" height="5px">
+        <button class="searchbtn" type="submit" >Search</button>
+      </form>
+    </span>
+
+  </nav>
+  
+
+<div class="slideshow" style="max-width:1000px">
+  <a href="slideshow1.html"><img class="mySlides" src="slide5.jpg" style="width:100%"></a>
+  <a href="slideshow2.html"><img class="mySlides" src="slide10.jpg" style="width:100%"></a>
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2500); // Change image every 2 seconds
+}
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("dropdown-content");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('dropdown-content')) {
+      myDropdown.classList.remove('dropdown-content');
+    }
+  }
+}
+</script>
+
+
+<div class="container3">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading"><center>CRICKET BAT</center></div>
+        <div class="panel-body"><img src="image10.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer"><center>Adidas R17 English Willow Cricket Bat </center><br><center><h4>MRP Rs.20,000</h4></center>
+          <a href="add to card.html"><div class="card">
+          <p><button>Add to Cart</button></p>
+        </div>
+      </a>
+      </div>
+    </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading"><center>CRICKET SHOES</center></div>
+        <div class="panel-body"><img src="image6.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer"><center>Puma 19.2 Spike Cricket Shoes Blue Green</center><br><center><h4>MRP Rs.5199</h4></center>
+          <a href="add to card.html"> <div class="card">
+            <p><button>Add to Cart</button></p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading"><center>CRICKET GLOVES</center></div>
+        <div class="panel-body"><img src="image5.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer"><center>Kookaburra XT 1.0 Cricket Batting Gloves Blue</center><br><center><h4>MRP Rs.2660</h4></center>
+          <a href="add to card.html"><div class="card">
+          <p><button>Add to Cart</button></p>
+        </div>
+      </a>
+      </div>
+    </div>
+    </div>
+  </div>
+</div><br><br><br><br><br>
+
+<div class="container3">    
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading"><center>BADMINTON RACKET</center></div>
+        <div class="panel-body"><img src="image7.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer"><center>Yonex Badminton Racket </center><br><center><h4>MRP Rs.8940</h4></center>
+          <a href="add to card.html"> <div class="card">
+          <p><button>Add to Cart</button></p>
+        </div>
+      </a>
+      </div>
+    </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading"><center>BADMINTON BAG</center></div>
+        <div class="panel-body"><img src="image8.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer"><center>Yonex Badminton Kit Bag</center><br><center><h4>MRP Rs.2,899</h4></center>
+          <a href="add to card.html"><div class="card">
+          <p><button>Add to Cart</button></p>
+        </div>
+      </a>
+      </div>
+    </div>
+    </div>
+    <div class="col-sm-4"> 
+      <div class="panel panel-primary">
+        <div class="panel-heading"><center>BADMINTON SHOES</center></div>
+        <div class="panel-body"><img src="image9.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer"><center>Yonex Badminton Shoes</center><br><center><h4>MRP RS.6,980</h4></center>
+          <a href="add to card.html"><div class="card">
+          <p><button>Add to Cart</button></p>
+        </div>
+      </a>
+      </div>
+    </div>
+    </div>
+  </div>
+</div><br><br><br><br><br>
+
+<div class="footer-basic">
+  <footer>
+      <div class="social">
+          <a href="#"><img src="instagram.png"><i class="instagram"></i></a>
+          <a href="#"><img src="snapchat.png"><i class="snapchat"></i></a>
+          <a href="#"><img src="twitter.png"><i class="twitter"></i></a>
+          <a href="#"><img src="facebook.png"><i class="facebook"></i></a>
+      </div>
+      <ul class="list-inline">
+         <a href="online sports shop.html">Home</a>&nbsp;&nbsp;&nbsp;
+         <a href="About us.html">Services</a>&nbsp;&nbsp;&nbsp;&nbsp;
+     
+          <a href="">Terms</a>&nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="">Privacy Policy</a>
+      </ul>
+      <p class="copyright">Sports Shop © 2021</p>
+  </footer>
+</div>
+</body>
+</html>

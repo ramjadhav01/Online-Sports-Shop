@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+</head>
+<style>
+    
+   
+  .container1{
+    margin-top: 20px;
+  }
+  nav{
+    height: 70px;
+    background: #023e72;
+    box-shadow: 0 3px 15px rgba(0,0,0,.4);
+    margin-top: 15px;
+    padding: 0px;
+  }
+  nav ul{
+    float: left;
+    padding-left: 0px;
+  }
+  nav ul li{
+    display: inline-block;
+  }
+  nav ul li a{
+    color: white;
+    display: block;
+    padding: 0 15px;
+    line-height: 70px;
+    font-size: 20px;
+    background: #023e72;
+    transition: .10s;
+  }
+  nav ul li a:hover,
+  nav ul li a.active{
+    color: #23dbdb;
+    text-decoration: none;
+
+
+  }
+  nav ul ul{
+    position: absolute;
+    top: 85px;
+    border-top: 3px solid #23dbdb;
+    opacity: 0;
+    visibility: hidden;
+  }
+  nav ul li:hover > ul{
+    top: 154px;
+    opacity: 1;
+    visibility: visible;
+    transition: .2s linear;
+    text-decoration: none;
+    list-style-type: none;
+
+  }
+  nav ul ul li{
+    width: 150px;
+    display: list-item;
+    position: relative;
+    border: 1px solid #042331;
+    border-top: none;
+  }
+  nav ul ul li a{
+    line-height: 45px;
+  }
+  nav ul ul ul{
+    border-top: none;
+  }
+  nav ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 150px;
+  }
+  nav ul ul li a i{
+    margin-left: 45px;
+  }
+  
+    .searchbar{
+      float: right;
+      padding: 18px;
+
+    }
+    .searchform{
+    
+
+
+    }
+    .searchbtn{
+      padding: 1px;
+      width: 70px;
+      border-radius: 8px;
+      border: 2px groove  black;
+    }
+    .searchinput{
+      border-radius: 8px;
+      border: 2px groove black;
+      width: 220px;
+    }
+    .searchbtn:hover{
+      
+      background-color: rgb(160, 157, 157);
+    }
+    .slideshow{
+     
+     margin-left: 260px;
+     margin-top: 30px;
+    }
+    .mySlides{
+      height: 550px;
+      border-radius: 15px;     
+
+    }
+    .container2{
+      margin-left: 200px;
+      margin-right: 200px;
+      height: 400px;
+      margin-top: 60px;
+      margin-bottom: 30px;
+    }
+    .container3{
+      margin-left: 200px;
+      margin-right: 200px;
+      height: 400px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  
+}
+
+
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 10px;
+  color: white;
+  background-color: #337ab7;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+    
+    .footer-basic {
+      padding:5px ;
+      background-color: #f2f2f2;
+      color: white;
+      margin-top: 100px;
+     
+    }
+    
+    .footer-basic ul {
+      padding:0;
+      list-style: none;
+      text-align:center;
+      font-size:18px;
+      line-height:1.6;
+      margin-bottom:0;
+    }
+    
+    .list-inline{
+        
+        text-decoration: solid;
+    }
+    
+   
+    .footer-basic ul a {
+      color: inherit;
+      text-decoration:none;
+      opacity: 1;
+    }
+    
+    .list-inline a:hover {
+      visibility: visible;
+      color: #01141d;
+      text-decoration: underline;
+      list-style-type: none;
+      opacity: 0.5;
+    }
+    
+    .footer-basic .social {
+      text-align:center;
+      padding-bottom:25px;
+    }
+    
+    .footer-basic .social > a {
+      font-size:24px;
+      width:90px;
+      height:90px;
+      line-height:40px;
+      display:inline;
+      text-align:center;
+      border-radius:40%;
+      border:px solid #ccc;
+      margin:0 8px;
+      color:inherit;
+      opacity:7;
+      
+    }
+    
+    .footer-basic .social > a:hover {
+      opacity:0.3;
+    }
+    
+    .footer-basic .copyright {
+      margin-top:15px;
+      text-align:center;
+      font-size:13px;
+      color:#aaa;
+      margin-bottom:10;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <header>
+         <center><h1 class="container1"> Sports Shop</h1></center>
+        </header>
+      </div>
+      <nav> 
+         <ul>
+            <li><a  href="online sports shop.html">Home</a></li>
+            <li><a  href="login.html">Login</a></li>
+            
+            <li> 
+               <a href="#">Sports
+               <i class="fas fa-caret-down"></i>
+               </a>
+               <ul style="z-index: 999999">
+                  <li><a href="Cricket.html" class="active">Cricket</a></li>
+                  <li><a href="hockey.html">Hockey</a></li>
+                  <li><a href="football.html">Football</a></li>
+                  <li><a href="badminton.html">Badminton</a></li>
+                  <li><a href="basketball.html">Basketball</a></li>
+               </ul>
+            </li>
+            
+            <li><a href="about us.html">About us</a></li>
+         </ul>
+    
+         <span class="searchbar">
+          <form class="searchform">
+            <input class="searchinput" type="text"  name="search" height="5px">
+            <button class="searchbtn" type="submit" >Search</button>
+          </form>
+        </span>
+    
+      </nav>
+
+    
+    
+      
+      <div class="container3">    
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="panel panel-primary">
+              <div class="panel-heading"><center>CRICKET BAT</center></div>
+              <div class="panel-body"><img src="cbat4.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+              <div class="panel-footer"><center>ISBN Tennis Ball Poplar Willow Cricket Bat (1 kg) </center><br><center><h4>MRP Rs.1,200</h4></center>
+              <a href="add to card.html"><div class="card">
+                <p><button>Add to Cart</button></p>
+              </div>
+            </a>
+            </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-4"> 
+            <div class="panel panel-primary">
+              <div class="panel-heading"><center>CRICKET BAT</center></div>
+              <div class="panel-body"><img src="cimg1.jpeg" class="img-responsive" style="width:100%" alt="Image"></div>
+              <div class="panel-footer"><center>MRF VK 18 Genius English Willow</center><br><center><h4>MRP Rs.12,899</h4></center>
+                <a href="add to card.html"> <div class="card">
+                <p><button>Add to Cart</button></p>
+              </div>
+            </a>
+            </div>
+          </div>
+        </div>
+          <div class="col-sm-4"> 
+            <div class="panel panel-primary">
+              <div class="panel-heading"><center>CRICKET BAT</center></div>
+              <div class="panel-body"><img src="cimg2.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+              <div class="panel-footer"><center>SS Magnum English Willow </center><br><center><h4>MRP RS.4,980</h4></center>
+                <a href="add to card.html"> <div class="card">
+                <p><button>Add to Cart</button></p>
+              </div>
+            </a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div><br><br><br><br><br>
+      
+      <div class="container3">    
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="panel panel-primary">
+              <div class="panel-heading"><center>CRICKET BALL</center></div>
+              <div class="panel-body"><img src="cball1.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+              <div class="panel-footer"><center>Dukes County International A Cricket Ball (Senior)</center><br><center><h4>MRP Rs.699</h4></center>
+                <a href="add to card.html"><div class="card">
+                <p><button>Add to Cart</button></p>
+              </div>
+            </a>
+            </div>
+          </div>
+          </div>
+          <div class="col-sm-4"> 
+            <div class="panel panel-primary">
+              <div class="panel-heading"><center>CRICKET BALL</center></div>
+              <div class="panel-body"><img src="cball2.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+              <div class="panel-footer"><center>SS Yorker Leather Cricket Ball</center><br><center><h4>MRP Rs.399</h4></center>
+                <a href="add to card.html"><div class="card">
+                <p><button>Add to Cart</button></p>
+              </div>
+            </a>
+            </div>
+          </div>
+          </div>
+          <div class="col-sm-4"> 
+            <div class="panel panel-primary">
+              <div class="panel-heading"><center>CRICKET BALL</center></div>
+              <div class="panel-body"><img src="cball3.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+              <div class="panel-footer"><center>Rubber Cricket Tennis Ball, Size Standard (Yellow)</center><br><center><h4>MRP RS.80</h4></center>
+                <a href="add to card.html"><div class="card">
+                <p><button>Add to Cart</button></p>
+              </div>
+            </a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div><br><br><br><br><br>
+
+      <div class="container3">    
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="panel panel-primary">
+              <div class="panel-heading"><center>CRICKET HELMET</center></div>
+              <div class="panel-body"><img src="cimg8.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+              <div class="panel-footer"><center>Avenger Pro Cricket Helmet</center><br><center><h4>MRP Rs.2,450</h4></center>
+                <a href="add to card.html"><div class="card">
+                <p><button>Add to Cart</button></p>
+              </div>
+            </a>
+            </div>
+          </div>
+          </div>
+          <div class="col-sm-4"> 
+            <div class="panel panel-primary">
+              <div class="panel-heading"><center>CRICKET KIT BAG</center></div>
+              <div class="panel-body"><img src="cimg7.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+              <div class="panel-footer"><center>SS Kit Bag 6 Bat Sleeves(Multicolour)</center><br><center><h4>MRP Rs.2,800</h4></center>
+                <a href="add to card.html"><div class="card">
+                <p><button>Add to Cart</button></p>
+              </div>
+            </a>
+            </div>
+          </div>
+          </div>
+          <div class="col-sm-4"> 
+            <div class="panel panel-primary">
+              <div class="panel-heading"><center>CRICKET PADS</center></div>
+              <div class="panel-body"><img src="cimg5.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+              <div class="panel-footer"><center>SG White Cricket batting pads</center><br><center><h4>MRP RS.2,480</h4></center>
+                <a href="add to card.html"><div class="card">
+                <p><button>Add to Cart</button></p>
+              </div>
+            </a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div><br><br><br><br><br>
+      
+      <div class="footer-basic">
+        <footer>
+            <div class="social">
+                <a href="#"><img src="instagram.png"><i class="instagram"></i></a>
+                <a href="#"><img src="snapchat.png"><i class="snapchat"></i></a>
+                <a href="#"><img src="twitter.png"><i class="twitter"></i></a>
+                <a href="#"><img src="facebook.png"><i class="facebook"></i></a>
+            </div>
+            <ul class="list-inline">
+               <a href="online sports shop.html">Home</a>&nbsp;&nbsp;&nbsp;
+               <a href="About us.html">Services</a>&nbsp;&nbsp;&nbsp;&nbsp;
+           
+                <a href="">Terms</a>&nbsp;&nbsp;&nbsp;&nbsp;
+             <a href="">Privacy Policy</a>
+            </ul>
+            <p class="copyright">Sports Shop © 2021</p>
+        </footer>
+      </div>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<style>
+    
+    .container2{
+      margin-left: 200px;
+      margin-right: 200px;
+      height: 400px;
+      margin-top: 60px;
+      margin-bottom: 30px;
+    }
+    .container3{
+      margin-left: 200px;
+      margin-right: 200px;
+      height: 400px;
+      margin-top: 90px;
+      margin-bottom: 30px;
+    }
+
+  .container1{
+    margin-top: 20px;
+  }
+  nav{
+    height: 70px;
+    background: #063247;
+    box-shadow: 0 3px 15px rgba(0,0,0,.4);
+    margin-top: 15px;
+    padding: 0px;
+  }
+  nav ul{
+    float: left;
+    padding-left: 0px;
+  }
+  nav ul li{
+    display: inline-block;
+  }
+  nav ul li a{
+    color: white;
+    display: block;
+    padding: 0 15px;
+    line-height: 70px;
+    font-size: 20px;
+    background: #063247;
+    transition: .10s;
+  }
+  nav ul li a:hover,
+  nav ul li a.active{
+    color: #23dbdb;
+    text-decoration: none;
+
+
+  }
+  nav ul ul{
+    position: absolute;
+    top: 85px;
+    border-top: 3px solid #23dbdb;
+    opacity: 0;
+    visibility: hidden;
+  }
+  nav ul li:hover > ul{
+    top: 154px;
+    opacity: 1;
+    transition: .2s linear;
+    background: top;
+    text-decoration: none;
+    list-style-type: none;
+
+  }
+  nav ul ul li{
+    width: 150px;
+    display: list-item;
+    position: relative;
+    border: 1px solid #042331;
+    border-top: none;
+  }
+  nav ul ul li a{
+    line-height: 45px;
+  }
+  nav ul ul ul{
+    border-top: none;
+  }
+  nav ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 150px;
+  }
+  nav ul ul li a i{
+    margin-left: 45px;
+  }
+  
+    .searchbar{
+      float: right;
+      padding: 18px;
+
+    }
+    .searchform{
+    
+
+
+    }
+    .searchbtn{
+      padding: 1px;
+      width: 70px;
+      border-radius: 8px;
+      border: 2px groove  black;
+    }
+    .searchinput{
+      border-radius: 8px;
+      border: 2px groove black;
+      width: 220px;
+    }
+    .searchbtn:hover{
+      
+      background-color: rgb(160, 157, 157);
+    }
+     .row1{
+        border:1px solid black;
+        margin-left: 20px;
+    }
+    .row,img{
+        align-items: center;
+    }
+</style>
+<body>
+
+    <div class="container">
+        <header>
+         <center><h1 class="container1"> Sports Shop</h1></center>
+        </header>
+      </div>
+      <nav> 
+         <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a  href="#">Login</a></li>
+    
+            <li>
+               <a href="#">Sports
+               <i class="fas fa-caret-down"></i>
+               </a>
+               <ul>
+                  <li><a href="#">Cricket</a></li>
+                  <li><a href="#">Hockey</a></li>
+                  <li><a href="#">Football</a></li>
+                  <li><a href="#">Badminton</a></li>
+                  <li><a href="#">Basketball</a></li>
+               </ul>
+            </li>
+            <li>
+               <a href="#">Brands
+               <i class="fas fa-caret-down"></i>
+               </a>
+               <ul>
+                  <li><a href="#">Nike</a></li>
+                  <li><a href="#">Puma</a></li>
+                  <li><a href="#">Addidas</a></li>
+                  <li><a href="#">Kookaburra</a></li>
+                  <li><a href="#">Yonex</a></li>
+               </ul>
+            </li>
+            <li><a href="#">About us</a></li>
+         </ul>
+    
+         <span class="searchbar">
+          <form class="searchform">
+            <input class="searchinput" type="text"  name="search" height="5px">
+            <button class="searchbtn" type="submit" >Search</button>
+          </form>
+        </span>
+    
+      </nav>
+
+    <div class="container3">    
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="panel panel-primary">
+              <div class="panel-heading"><center>BADMINTON RACKET</center></div>
+              <div class="panel-body"><img src="image7.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+              <a href="#"><div class="panel-footer"><center>Yonex Badminton Racket </center><br><center>MRP Rs.8940</center></div></a>
+            </div>
+          </div>
+          <div class="col-sm-4"> 
+            <div class="panel panel-primary">
+              <div class="panel-heading"><center>BADMINTON BAG</center></div>
+              <div class="panel-body"><img src="image8.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+              <a href="#"><div class="panel-footer"><center>Yonex Badminton Kit Bag</center><br><center>MRP Rs.2,899</center></div></a>
+            </div>
+          </div>
+          <div class="col-sm-4"> 
+            <div class="panel panel-primary">
+              <div class="panel-heading"><center>BADMINTON SHOES</center></div>
+              <div class="panel-body"><img src="image9.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+              <a href="#"><div class="panel-footer"><center>Yonex Badminton Shoes</center><br><center>MRP RS.6,980</center></div></a>
+            </div>
+          </div>
+        </div>
+      </div><br><br><br><br><br>
+      
+      <div class="container3">    
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="panel panel-primary">
+              <div class="panel-heading"><center>BADMINTON RACKET</center></div>
+              <div class="panel-body"><img src="image7.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+              <a href="#"><div class="panel-footer"><center>Yonex Badminton Racket </center><br><center>MRP Rs.8940</center></div></a>
+            </div>
+          </div>
+          <div class="col-sm-4"> 
+            <div class="panel panel-primary">
+              <div class="panel-heading"><center>BADMINTON BAG</center></div>
+              <div class="panel-body"><img src="image8.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+              <a href="#"><div class="panel-footer"><center>Yonex Badminton Kit Bag</center><br><center>MRP Rs.2,899</center></div></a>
+            </div>
+          </div>
+          <div class="col-sm-4"> 
+            <div class="panel panel-primary">
+              <div class="panel-heading"><center>BADMINTON SHOES</center></div>
+              <div class="panel-body"><img src="image9.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+              <a href="#"><div class="panel-footer"><center>Yonex Badminton Shoes</center><br><center>MRP RS.6,980</center></div></a>
+            </div>
+          </div>
+        </div>
+      </div><br><br><br><br><br>
+
+      <div class="container3">    
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="panel panel-primary">
+              <div class="panel-heading"><center>BADMINTON RACKET</center></div>
+              <div class="panel-body"><img src="image7.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+              <a href="#"><div class="panel-footer"><center>Yonex Badminton Racket </center><br><center>MRP Rs.8940</center></div></a>
+            </div>
+          </div>
+          <div class="col-sm-4"> 
+            <div class="panel panel-primary">
+              <div class="panel-heading"><center>BADMINTON BAG</center></div>
+              <div class="panel-body"><img src="image8.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+              <a href="#"><div class="panel-footer"><center>Yonex Badminton Kit Bag</center><br><center>MRP Rs.2,899</center></div></a>
+            </div>
+          </div>
+          <div class="col-sm-4"> 
+            <div class="panel panel-primary">
+              <div class="panel-heading"><center>BADMINTON SHOES</center></div>
+              <div class="panel-body"><img src="image9.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+              <a href="#"><div class="panel-footer"><center>Yonex Badminton Shoes</center><br><center>MRP RS.6,980</center></div></a>
+            </div>
+          </div>
+        </div>
+      </div><br><br><br><br><br> 
+</body>
+</html>

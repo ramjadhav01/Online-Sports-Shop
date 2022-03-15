@@ -1,0 +1,331 @@
+<html>
+    <head>
+        <title>Signup Page</title>
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: white;
+            }
+            button{
+                background-color: #4CAF50;
+                width: 25%;
+                padding: 15px;
+                color: black;
+                border: none;
+                float: center;
+                font-size: 15px;
+            }
+            label{
+                font-size: 20px;
+            }
+            form{
+                border: 3px solid #f1f1f1;
+            }
+            input[type=email],input[type=text]{
+                width: 50%;
+                font-size: 15px;
+                margin: 8px 0px;
+                padding: 12px 20px;
+                display: inline-block;
+                border: 2px solid green;
+                box-sizing: border-box;
+            }
+            input[type=radio]{
+                height: 18px;
+                width: 18px;
+            }
+            button:hover{
+                opacity:0.7;
+
+            }
+            .container0{
+                padding: 10px;
+                background-color: white;
+            }
+            .imgcontainer {
+                text-align: center;
+                margin: 24px 0 12px 0;
+            }
+              
+            img.avatar {
+                width: 10%;
+                border-radius: 50%;
+            } 
+            
+            .container1{
+      margin-top: 20px;
+    } 
+    nav{
+      height: 70px;
+      background: #023e72;
+      box-shadow: 0 3px 15px rgba(0,0,0,.4);
+      margin-top: 25px;
+      padding: 0px;
+    }
+    nav ul{
+      float: left;
+      padding-left: 0px;
+    }
+    nav ul li{
+      display: inline-block;
+    }
+    nav ul li a{
+      color: white;
+      display: block;
+      padding: 0 15px;
+      line-height: 70px;
+      font-size: 20px;
+      background: #023e72;
+      transition: .10s;
+    }
+    nav ul li a:hover,
+    nav ul li a.active{
+      color: #23dbdb;
+      text-decoration: none;
+  
+  
+    }
+    nav ul ul{
+      position: absolute;
+      top: 85px;
+      border-top: 3px solid #23dbdb;
+      opacity: 0;
+      visibility: hidden;
+    }
+    nav ul li:hover > ul{
+      top: 154px;
+      opacity: 1;
+      visibility: visible;
+      transition: .2s linear;
+      text-decoration: none;
+      list-style-type: none;
+  
+    }
+    nav ul ul li{
+      width: 150px;
+      display: list-item;
+      position: relative;
+      border: 1px solid #042331;
+      border-top: none;
+    }
+    nav ul ul li a{
+      line-height: 45px;
+      text-decoration: none;
+    }
+    nav ul ul ul{
+      border-top: none;
+    }
+    nav ul ul ul li{
+      position: relative;
+      top: -70px;
+      left: 150px;
+      text-decoration: none;
+
+    }
+    nav ul ul li a i{
+      margin-left: 45px;
+      
+    }
+    
+    .searchbar{
+        float: right;
+        padding: 18px;
+        width: 40%;
+        padding: 8px 10px;
+        margin: 10px 0;
+        display: inline;
+  
+  
+  
+      }
+      .searchbtn{
+        padding: 1px;
+        width: 70px;
+        border-radius: 8px;
+        border: 2px groove  black;
+        background-color: white;
+        
+      }
+      .searchinput{
+        border-radius: 8px;
+        border: 2px groove black;
+        width: 220px;
+      }
+    
+      .searchform{
+      
+        border: none;
+        float: right;
+  
+    }
+    .searchbtn:hover{
+        
+        background-color: rgb(160, 157, 157);
+        cursor: pointer;
+      }
+
+      
+      .footer-basic {
+        padding:5px ;
+        background-color: #f2f2f2;
+        color: white;
+        margin-top: 30px;
+       
+      }
+      
+      .footer-basic ul {
+        padding:0;
+        list-style: none;
+        text-align:center;
+        font-size:18px;
+        line-height:1.6;
+        margin-bottom:0;
+      }
+      
+      .list-inline{
+          
+          text-decoration: solid;
+      }
+      
+     
+      .footer-basic ul a {
+        color: black;
+        text-decoration:none;
+        opacity: 1;
+      }
+      
+      .list-inline a:hover {
+        visibility: visible;
+        color: #01141d;
+        text-decoration: underline;
+        list-style-type: none;
+        opacity: 0.5;
+      }
+      
+      .footer-basic .social {
+        text-align:center;
+        padding-bottom:25px;
+      }
+      
+      .footer-basic .social > a {
+        font-size:24px;
+        width:90px;
+        height:90px;
+        line-height:40px;
+        display:inline;
+        text-align:center;
+        border-radius:40%;
+        border:0px solid #ccc;
+        margin:0 8px;
+        color:inherit;
+        opacity:7;
+        
+      }
+      
+      .footer-basic .social > a:hover {
+        opacity:0.3;
+      }
+      
+      .footer-basic .copyright {
+        margin-top:15px;
+        text-align:center;
+        font-size:13px;
+        color:#aaa;
+        margin-bottom:10;
+      }
+  
+        </style>
+    </head>
+    <body>
+        <div>
+            <header>
+             <center><h1 class="container1"> Sports Shop</h1></center>
+            </header>
+          </div>
+        
+          <nav> 
+            <ul>
+               <li><a  href="online sports shop.html">Home</a></li>
+               <li><a  href="login_page.html" class="active">Login</a></li>
+               
+               <li> 
+                  <a href="#">Sports
+                  <i class="fas fa-caret-down"></i>
+                  </a>
+                  <ul style="z-index: 999999">
+                     <li><a href="Cricket.html">Cricket</a></li>
+                     <li><a href="hockey.html">Hockey</a></li>
+                     <li><a href="football.html">Football</a></li>
+                     <li><a href="badminton.html">Badminton</a></li>
+                     <li><a href="basketball.html">Basketball</a></li>
+                  </ul>
+               </li>
+               
+               <li><a href="about us.html">About us</a></li>
+            </ul>
+       
+            <span class="searchbar">
+             <form class="searchform">
+               <input class="searchinput" type="text1"  name="search1">
+               <button class="searchbtn" type="submit" >Search</button>
+             </form>
+           </span>
+       
+         </nav>
+
+        <form action="#" method="post">
+         
+            <center><div class="container0">
+                <div class="imgcontainer">
+                    <img src="sign.png" alt="Avatar" class="avatar">
+                </div>
+                <label for='first_name'><b>First Name : </b></label>
+		        <input type='text' placeholder="Enter your first name" name='first_name' required><br>
+		        <label for='last_name'><b>Last Name :</b></label>
+		        <input type='text' placeholder='Enter your last name' name='last_name' required><br>
+		        <label for='sex' ><b>Gender : </b></label>
+		        <input type='radio' name='sex' value='male' required>
+		        <label ><b>Male</b></label>
+		        <input type='radio' name='sex' value='female' required>
+		        <label ><b>Female</b></label><br>
+            	<label for ='email'><b>&nbsp;&nbsp;&nbsp;&nbsp;Email Id :  </b></label>
+            	<input type="email" placeholder="Enter email" name="email" float="right"  required><br>  
+            	<label for='password'><b>Password : </b></label>
+            	<input type="text" placeholder="Enter Password" name="password" required><br> <br> 
+            	<button type="submit"><b>Signup</b></button><br>     
+            	Already have an account <a href="login_page.html"> Login </a>
+            </div></center>
+        </form>
+
+        <div class="footer-basic">
+            <footer>
+                <div class="social">
+                    <a href="#"><img src="instagram.png"><i class="instagram"></i></a>
+                    <a href="#"><img src="snapchat.png"><i class="snapchat"></i></a>
+                    <a href="#"><img src="twitter.png"><i class="twitter"></i></a>
+                    <a href="#"><img src="facebook.png"><i class="facebook"></i></a>
+                </div>
+                <ul class="list-inline">
+                   <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;
+                   <a href="About us.html">Services</a>&nbsp;&nbsp;&nbsp;&nbsp;
+               
+                    <a href="terms and condition.html">Terms</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                 <a href="privacy policy.html">Privacy Policy</a>
+                </ul>
+                <p class="copyright">Sports Shop © 2021</p>
+            </footer>
+          </div>
+
+    </body>
+</html>
